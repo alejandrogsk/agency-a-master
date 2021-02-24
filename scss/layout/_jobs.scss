@@ -1,0 +1,48 @@
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+
+    &__box {
+        background-color: $color-white;
+        height: 30rem;
+        padding: 3rem;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+
+        &--footer {
+            display: flex;
+            align-items: center;
+
+            &-box {
+                display: flex;
+                margin-right: auto;
+
+                & span {
+                    transform: translateY(30%);
+                }
+            }
+
+            &-circle {
+                align-items: center;
+                background-color:$color-yellow;
+                border-radius: 50%;
+                display: flex;
+                font-size: 2.5rem;
+                font-weight: 200;
+                height: 4rem;
+                justify-content: center;
+                width: 4rem;
+            }
+            &-circle:hover {
+                background-color: $color-secondary;
+                color: $color-white;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,47 @@
+.section-info {
+    background-color: $color-background;
+    grid-column: col-flex-1-start / col-flex-2-end;
+    padding: 6rem 0;
+}
+
+.section-brands {
+    grid-column: col-middle-start / col-middle-end;
+    padding: 6rem 0;
+}
+
+.section-tech {
+    background-color: $color-primary;
+    grid-column: col-flex-1-start / col-flex-2-end;
+    padding: 6rem 0;
+}
+
+.section-green {
+    background-color: $color-secondary;
+    grid-column: col-flex-1-start / col-flex-2-end;
+    padding: 6rem 0;
+}
+
+.section-team {
+    background-color: $color-background;
+    grid-column: col-flex-1-start / col-flex-2-end;
+    padding: 12rem 3rem;
+}
+
+.section-jobs {
+    background-color:  $color-primary;
+    grid-column: col-flex-1-start / col-flex-2-end;
+    padding: 6rem 4rem;
+}
+
+.section-events {
+    background-color: $color-white;
+    grid-column: col-flex-1-start / col-flex-2-end;
+    padding: 6rem 0;
+}
+
+footer {
+    background-color: $color-background;
+    grid-column: col-flex-1-start / col-flex-2-end;
+    padding: 6rem 0;
+    position: relative;
+}

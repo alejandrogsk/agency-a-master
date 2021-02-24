@@ -1,0 +1,30 @@
+.item {
+    /*background-color: green;*/
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all .75s;
+  }
+  
+
+  .d-n { display: none !important; }  //For Resizing 
+
+  .o-1 {
+    background-color: white;  
+    opacity: 1;
+  }
+  .o-2 {
+    background-color: white;
+    opacity: .75;
+  }
+  
+  .o-3 {
+    background-color: white;
+    opacity: .5;
+  }
+  
+  .o-4 {
+    background-color: white;
+    opacity: .25;
+  }

@@ -1,0 +1,131 @@
+.info {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        
+
+        &--1 {
+            margin-right: auto;
+
+            &__heading {
+                margin-top: 5rem;
+                margin-left: 5rem;
+            }
+        } 
+
+        &--2 {
+            display: flex;
+
+            &__img {
+                padding: 0;
+            }
+
+            @include respond(phone-tab) {
+                display: none;
+            }
+        }
+    }
+
+
+    &__middle {
+
+        display: flex;
+        margin: 4rem auto;
+
+        @include respond( phone ) {
+            flex-direction: column;
+        }
+
+
+        &--content {
+            flex: 0 0 33%;
+            max-width: 33%;
+
+            @include respond( phone ) {
+                max-width: 100%;
+            }
+        }
+
+
+        &--content:not(:last-child) {
+            margin-left: 1rem;
+
+            @include respond( phone ) {
+                margin-left: 0;
+            }
+        }
+
+        &--content:not(:first-child){
+            margin-left: 2rem;
+
+            @include respond( phone ) {
+                margin-left: 0;
+                margin-top: 4rem;
+            }
+        }
+
+        
+    }
+
+    
+    &__space {
+        height: 20rem;
+        @include respond( phone ) {
+            display: none;
+        }
+    }
+    
+    &__bottom {
+        display: grid;
+        grid-template-rows: repeat(2, 18rem);
+        grid-template-columns: repeat(4, 18rem);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @include respond( phone ) {
+            position: relative;
+            margin-top: 0rem;
+            justify-content: center;
+            grid-template-rows: repeat(2, 14rem);
+            grid-template-columns: repeat(4, 14rem);
+            
+        }
+        @include respond( phone-small ) {
+            
+
+            grid-template-rows: repeat(2, 10rem);
+            grid-template-columns: repeat(4, 10rem);
+            
+        }
+ 
+
+        &--img-1 {
+            background: url(../../imagenes/landscape-2.jpg);
+            background-size: cover;
+            background-position: right;
+            grid-area: 1/4/2/5;
+        }
+
+        &--img-2 {
+            background-image: url(../../imagenes/square-2.jpg);
+            background-size: cover;
+            grid-area: 2/1/3/2;
+        }
+
+        &--square-1 {
+            background-color: $color-primary;
+            grid-area: 2/3/3/4;
+        }
+
+        &--square-2 {
+            background-color: white;
+            grid-area: 2/4/3/5;
+        }
+
+    }
+}

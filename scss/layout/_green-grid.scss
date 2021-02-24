@@ -1,0 +1,40 @@
+.green__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    margin: 8rem 4rem;
+
+    //circles
+    &-1 { 
+        display: grid;
+        grid-template: repeat(7, min-content) / repeat(7, min-content);
+        grid-gap: 15px;
+        justify-content: center;
+    }
+
+    //numbers
+    &-2 { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, min-content);
+        column-gap: 2rem;
+
+        &--left,
+        &--right {
+            display: grid;
+            grid-template-columns: 100%;
+            justify-items: start;
+            row-gap: 4rem;
+        }
+
+        &--left {
+            grid-column: 1/2;
+            grid-row: 1/3;    
+        }
+
+        &--right{
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+
+    }
+}

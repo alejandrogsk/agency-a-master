@@ -1,0 +1,32 @@
+.circle-1 {
+    display: block;
+    background-color: $color-white;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle-2 {
+    display: block;
+    background-color: $color-secondary;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-50%) translateY(-70%);
+    z-index: 1;
+}
+
+.square-1 {
+    display: block;
+    background-color: $color-secondary;
+    height: 18rem;
+    width: 18rem;
+
+    @include respond(tab-port){//width < 1200px
+        display: none;
+    }
+}

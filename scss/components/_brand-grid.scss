@@ -1,0 +1,44 @@
+.brand {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+
+    justify-items: center;
+    align-items: center;
+
+    @include respond( phone ) {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    &__block{
+        box-shadow: 0 20px 30px -16px rgba(9,9,16,.2);
+        padding: 2rem;
+        display: grid;
+        width: 20rem;
+        justify-content: center;
+        align-content: center;
+        min-height: 9rem;
+    }
+
+    &__img {
+        height: 4rem;
+        width: auto;
+        
+        &--lgt {
+            height: 2.5rem;
+        }
+
+        &--lg {
+            height: 3rem;
+        }
+
+        &--ms {
+            height: 5rem;
+        }
+
+        &--s {
+            height: 6rem;
+        }
+    }
+
+}
