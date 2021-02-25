@@ -13,7 +13,7 @@
         }
 
         &--2 {
-            background-image: url(../../imagenes/landscape-3.jpg);
+            background-image: url(../imagenes/landscape-3.jpg);
             background-size: cover;
             background-position: right;
             grid-row: 2 / 3;
@@ -43,7 +43,7 @@
         }
 
         &--6 {
-            background-image: url(../../imagenes/landscape-1.jpg);
+            background-image: url(../imagenes/landscape-1.jpg);
             background-size: cover;
             background-position: center;
             grid-row: 3 / 4;
@@ -51,7 +51,7 @@
         }
 
         &--7 {
-            background-image: url(../../imagenes/landscape-4.jpg);
+            background-image: url(../imagenes/landscape-4.jpg);
             background-size: cover;
             grid-row: 3 / 4;
             grid-column: 4 / 5;
