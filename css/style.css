@@ -635,6 +635,11 @@ header {
   height: 5rem;
   width: auto;
 }
+@media (max-width: 54.37em) {
+  .navbar__logo--img {
+    margin-top: 2rem;
+  }
+}
 .navbar__menu--list {
   display: flex;
   list-style: none;
@@ -754,9 +759,9 @@ header {
   cursor: pointer;
   height: 7rem;
   position: fixed;
-  right: 4rem;
+  right: 2rem;
   text-align: center;
-  top: 4rem;
+  top: 2rem;
   width: 7rem;
   z-index: 200;
 }
@@ -765,8 +770,8 @@ header {
   border-radius: 50%;
   height: 6rem;
   position: fixed;
-  right: 4.5rem;
-  top: 4.5rem;
+  right: 2.5rem;
+  top: 2.5rem;
   transition: transform 0.8s cubic-bezier(0.36, -0.08, 0, 1.4);
   width: 6rem;
   z-index: 100;
