@@ -9,7 +9,6 @@ export function displayNoneCircleColor(containerGrid, dNone) {
     
     //window.innerWidth
     window.addEventListener('resize', () => {
-        console.log("resize funciona")
         let $container = document.querySelector(containerGrid);
         let ancho = window.innerWidth;
         ancho < 900 ? $container.classList.add(dNone) :$container.classList.remove(dNone);

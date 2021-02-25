@@ -8,5 +8,4 @@ document.addEventListener("DOMContentLoaded", () => {
     displayMenu('.navbar__responsive', '.navbar__menu', 'd-n');
     menuClose('.navbar__responsive--link', '#navi-toggle');
     circles();
-    console.log("mensajde de esperanza 3")
 });
