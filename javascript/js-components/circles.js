@@ -37,7 +37,7 @@ export function circleColor(item, o1, o2, o3, o4) {
     } 
 }
 */
-function circles() {
+export function circles() {
     const container = document.getElementById("circles");
     container.classList.add("green__grid-1");
     const divsToDisplay = [];
@@ -67,5 +67,3 @@ function circles() {
     /*let result = container.appendChild();*/
     return;
   }
-  
-  circles();
