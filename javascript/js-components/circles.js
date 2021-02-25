@@ -16,27 +16,7 @@ export function displayNoneCircleColor(containerGrid, dNone) {
     
 }
 
-  
-  
-//Hace que los colores cambien segun el orden establecido
-/*
-export function circleColor(item, o1, o2, o3, o4) {
-    const boton = document.querySelectorAll(item);
-    for(let i = 0; i < boton.length; i++) {         
-        setInterval(() => {
-            if( boton[i].classList.contains( o1 ) ){
-                boton[i].classList.replace( o1 ,o2 );
-            } else if ( boton[i].classList.contains( o2 ) ){
-                boton[i].classList.replace( o2 , o3);
-            } else if ( boton[i].classList.contains( o3 ) ) {
-                boton[i].classList.replace( o3, o4 );
-            } else if ( boton[i].classList.contains( o4 ) ) {
-                boton[i].classList.replace( o4, o1 );
-            } 
-        }, 1000);
-    } 
-}
-*/
+
 export function circles() {
     const container = document.getElementById("circles");
     container.classList.add("green__grid-1");
