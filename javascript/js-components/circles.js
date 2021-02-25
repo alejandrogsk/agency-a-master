@@ -45,7 +45,6 @@ export function circles() {
     for (let i = 0; i < 49; i++) {
       let newDiv = document.createElement("div");
       divsToDisplay.push(newDiv);
-      i++;
     }
   
     divsToDisplay.forEach((element) => {
