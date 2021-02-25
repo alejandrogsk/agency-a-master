@@ -1,4 +1,4 @@
-import { displayNoneCircleColor, circleColor, circles } from './js-components/circles.js';
+import { displayNoneCircleColor, circles } from './js-components/circles.js';
 import { displayMenu, menuClose } from './js-components/menu.js';
 
 
