@@ -105,14 +105,14 @@
  
 
         &--img-1 {
-            background: url(../../imagenes/landscape-2.jpg);
+            background: url(../imagenes/landscape-2.jpg);
             background-size: cover;
             background-position: right;
             grid-area: 1/4/2/5;
         }
 
         &--img-2 {
-            background-image: url(../../imagenes/square-2.jpg);
+            background-image: url(../imagenes/square-2.jpg);
             background-size: cover;
             grid-area: 2/1/3/2;
         }
