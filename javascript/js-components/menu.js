@@ -18,11 +18,9 @@ export function displayMenu(menuResponsive, menuNormal, displayNone) {
             mn = document.querySelector(menuNormal),
             anchoIW = window.innerWidth;
         if( anchoIW <= 800 ) {
-            console.log(anchoIW, 'ancho menor a 800')
             mr.classList.remove(displayNone);
             mn.classList.add(displayNone);
         } else {
-            console.log('ancho mayor')
             mr.classList.add(displayNone);
             mn.classList.remove(displayNone);
         }
